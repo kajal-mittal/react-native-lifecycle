@@ -11,7 +11,7 @@ react-native run-android
 
 1. pop:- go back in the stack
 2. popToTop:- go To Top of the stack
-3. willFocus:- the screen will focus.(User to change state of component whenever screen will be focused. Donot forget to remove listeners.)
+3. willFocus:- the screen will focus.(User to change state of component whenever screen will be focused. Don't forget to remove listeners.)
 4. popByNumber:- 
 5. navigateOnce:- prevent to navigate multiple times.
  
