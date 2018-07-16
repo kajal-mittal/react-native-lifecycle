@@ -9,11 +9,11 @@ react-native run-android
 ```
 ## Navigation Actions (React Native)
 
-1. pop
-2. popToTop
-3. willFocus
-4. popByNumber
-5. navigateOnce
+1. pop:- go back in the stack
+2. popToTop:- go To Top of the stack
+3. willFocus:- the screen will focus.(User to change state of component whenever screen will be focused. Donot forget to remove listeners.)
+4. popByNumber:- 
+5. navigateOnce:- prevent to navigate multiple times.
  
 ### willFocus
 ##### FirstScene.js
@@ -21,6 +21,11 @@ react-native run-android
 componentDidMount = () => {
 		this._willFocus = this.props.navigation.addListener('willFocus', () => this.setState({ showText: true }));
 	};
+```
+```
+componentWillUnmount() {
+		this._willFocus.remove();
+	}
 ```
 
 ### navigateOnce 
